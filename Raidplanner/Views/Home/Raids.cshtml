@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "Raids de FF14";
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .raid-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .raid-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+            .raid-card:hover {
+                transform: translateY(-10px);
+            }
+
+        .raid-card-content {
+            padding: 20px;
+        }
+
+        .raid-card h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .raid-card p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .raid-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+            .raid-card a:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Raids de Final Fantasy XIV</h1>
+        <p>Explorez les raids disponibles dans le monde de Eorzea</p>
+    </header>
+
+    <div class="raid-list">
+
+        <div class="raid-card">
+            <div class="raid-card-content">
+                <h3>The Binding Coil of Bahamut</h3>
+                <p>Un raid mythique qui plonge les joueurs dans les abysses pour combattre le puissant Bahamut. Un défi de taille pour les aventuriers aguerris !</p>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Raids" asp-action="AllRaids">All Raids Organisé</a>
+            </div>
+        </div>
+
+        <div class="raid-card">
+            <div class="raid-card-content">
+                <h3>Alexander</h3>
+                <p>Alexander est une machine gigantesque qui renferme des secrets antiques et une puissance destructrice. Défiez-le dans ce raid épique.</p>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Raids" asp-action="AllRaids">All Raids Organisé</a>
+            </div>
+        </div>
+
+        <div class="raid-card">
+            <div class="raid-card-content">
+                <h3>Omega</h3>
+                <p>Affrontez les défis de la machine Omega et découvrez des ennemis provenant d'un autre univers. Un raid avec des mécaniques très exigeantes.</p>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Raids" asp-action="AllRaids">All Raids Organisé</a>
+            </div>
+        </div>
+
+        <div class="raid-card">
+            <div class="raid-card-content">
+                <h3>Eden</h3>
+                <p>Un des raids les plus populaires du jeu, avec des combats intenses et une histoire immersive. Défiez Eden et ses forces de l'ombre.</p>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Raids" asp-action="AllRaids">All Raids Organisé</a>
+            </div>
+        </div>
+
+        <div class="raid-card">
+            <div class="raid-card-content">
+                <h3>Pandemonium</h3>
+                <p>Un des raids les plus populaires du jeu, avec des combats intenses et une histoire immersive. Défiez le pandemonium et ses forces de l'ombre.</p>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Raids" asp-action="AllRaids">All Raids Organisé</a>
+            </div>
+        </div>
+
+        <div class="raid-card">
+            <div class="raid-card-content">
+                <h3>The Arkadion</h3>
+                <p>Un des raids les plus populaires du jeu, avec des combats intenses et une histoire immersive. Défiez l'arkadion et ses forces de l'ombre.</p>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Raids" asp-action="AllRaids">All Raids Organisé</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

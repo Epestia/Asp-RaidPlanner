@@ -1,0 +1,132 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.navbar {
+    background-color: #000 !important;
+}
+
+    .navbar .nav-link {
+        color: #fff !important;
+    }
+
+        .navbar .nav-link:hover {
+            color: #ccc !important;
+        }
+
+
+body {
+    cursor: url('/images/ucob.png'), auto;
+}
+
+/* Optionnellement, tu peux appliquer le changement uniquement sur certains éléments */
+button, a {
+    cursor: url('/images/ucob.png'), auto;
+}
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Titres */
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #1d1d1d;
+    margin-bottom: 20px;
+}
+
+/* Paragraphes */
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+    /* Mise en valeur du texte */
+    p strong {
+        font-weight: bold;
+        color: #333;
+    }
+
+/* Espacement */
+.mt-4 {
+    margin-top: 20px;
+}
+
+/* Cadre doux autour du contenu */
+div.text-center {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Lien */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .text-center {
+        padding: 20px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+.footer {
+    text-align: left; /* Aligne tout le contenu du footer à gauche */
+}
+
+    .footer .container {
+        display: flex;
+        justify-content: flex-start; /* Aligne le contenu à gauche */
+        align-items: center; /* Aligne verticalement au centre si nécessaire */
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: #007bff; /* Ajouter une couleur au lien pour qu'il soit visible */
+    }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }

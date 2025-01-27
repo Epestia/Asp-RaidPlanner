@@ -1,0 +1,22 @@
+﻿@model Raidplanner.Models.Forms.CreateDjForm
+
+@{
+    ViewData["Title"] = "RegisterDJ";
+}
+
+<h2>Register DJ</h2>
+
+<form asp-action="RegisterDj" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

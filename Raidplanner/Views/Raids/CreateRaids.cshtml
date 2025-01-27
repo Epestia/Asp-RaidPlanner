@@ -1,0 +1,37 @@
+﻿@model Raidplanner.Models.Forms.CreateRaidsForm
+
+@{
+    ViewData["Title"] = "Créer un Raid";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Date" class="control-label"></label>
+        <input asp-for="Date" class="form-control" />
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="BossId" class="control-label"></label>
+        <input asp-for="BossId" class="form-control" />
+        <span asp-validation-for="BossId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DJId" class="control-label"></label>
+        <input asp-for="DJId" class="form-control" />
+        <span asp-validation-for="DJId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Créer</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

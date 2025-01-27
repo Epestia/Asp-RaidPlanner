@@ -1,0 +1,40 @@
+﻿@model Raidplanner.Models.Forms.CreateUserForm
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <form asp-action="Register" method="post">
+        <div>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" asp-for="Name" required /><br><br>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" asp-for="Email" required /><br><br>
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" asp-for="Password" required /><br><br>
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div>
+            <label for="confirm">Confirm:</label><br>
+            <input type="password" id="confirm" asp-for="Confirm" required /><br><br>
+            <span asp-validation-for="Confirm" class="text-danger"></span>
+        </div>
+        <div>
+            <input type="submit" value="Register" />
+        </div>
+    </form>
+
+</body>
+</html>

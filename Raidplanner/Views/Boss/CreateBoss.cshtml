@@ -1,0 +1,25 @@
+﻿@model Raidplanner.Models.Forms.CreateBossForm
+
+@{
+    ViewData["Title"] = "CreateBoss";
+}
+
+<h2>Créer un nouveau Boss</h2>
+
+<form asp-action="RegisterBoss" method="post" class="form-horizontal">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Créer</button>
+    </div>
+</form>
